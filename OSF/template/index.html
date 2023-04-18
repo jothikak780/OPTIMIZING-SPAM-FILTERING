@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SMS spam detection</title>
+</head>
+<style>
+body
+{
+background-image:url("sms1.JPG");
+background-repeat:no repeat;
+}
+h1
+{
+color:navy;
+text-decoration:underline;
+}
+h2
+{
+color:black;
+margin-left:40px;
+}
+h3
+{
+color:red;
+margin-left:60px;
+}
+</style>
+
+<h1>
+<center>
+<b>
+<i>
+<font size=15>
+ SMS spam detection
+</font>
+</i>
+</b>
+</center>
+</h1>
+<div style="background-color:bisque">
+<hr>
+<hr></div>
+<h2> SMS spam detection</h2>
+<h4> 
+
+<form action="/getdata" method="post">
+ <table>
+  <tr>
+   <td>msg</td>:&nbsp<input type="text" name="enter the SMS" required='required'/><br>
+  </tr>
+  <tr>
+  <td><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button>
+  </td>
+  </tr>
+ </table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+</h4>
+<h3>
+<b>
+{{ prediction_text }}
+</b>
+</h3>	
+</html>
